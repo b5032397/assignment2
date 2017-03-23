@@ -2,7 +2,7 @@ package com.cjhudlin
 
 class Library {
 
-String building/name
+String building
 
 String address
 
@@ -14,7 +14,7 @@ int studyspaces
 
     static constraints = {
 
-	building/name blank:false, nullable:false, maxSize:25
+	building blank:false, nullable:false, maxSize:25
 
 	address blank:false, nullable:false
 

@@ -8,7 +8,7 @@ Date datecreated
 
 String student
 
-string review
+String review
 
     static constraints = {
 
