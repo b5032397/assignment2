@@ -2,5 +2,5 @@ package com.cjhudlin
 
 class CourseController {
 
-    def index() { }
+    def scaffold Course
 }

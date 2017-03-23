@@ -2,5 +2,5 @@ package com.cjhudlin
 
 class LibrarianController {
 
-    def index() { }
+    def scaffold = Librarian
 }
