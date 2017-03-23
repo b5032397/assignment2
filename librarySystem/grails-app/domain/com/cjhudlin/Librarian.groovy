@@ -14,7 +14,11 @@ String password
 
 int telephone
 
-String library
+Library library
+
+String toString() {
+	return name
+}
 
     static constraints = {
 

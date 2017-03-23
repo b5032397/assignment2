@@ -12,6 +12,14 @@ String department
 
 String studymode
 
+String description
+
+static hasMany=[students:Student]
+
+String toString() {
+	return title
+}
+
     static constraints = {
 
 	title blank:false, nullable:false
@@ -21,5 +29,7 @@ String studymode
 	department blank:false, nullable:false
 
 	studymode blank:false, nullable:false, maxSize:20
+
+	description blank:false, nullable:false, maxSize:5000, widget:'textarea'
     }
 }

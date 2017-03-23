@@ -12,7 +12,13 @@ String password
 
 String studentid
 
-String course
+Course course
+
+static hasMany=[books:Book, bookreviews:BookReview]
+
+String toString() {
+	return studentid
+}
 
     static constraints = {
 

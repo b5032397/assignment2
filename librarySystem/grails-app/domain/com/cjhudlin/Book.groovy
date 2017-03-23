@@ -14,9 +14,11 @@ Date dateborrowed
 
 Date returndate
 
-String Student
+Student student
 
 Boolean overdue
+
+static hasMany=[bookreviews:BookReview]
 
     static constraints = {
 
@@ -27,6 +29,12 @@ Boolean overdue
 	author blank:false, nullable:false
 
 	isbn blank:false, nullable:false
+
+	dateborrowed blank:true, nullable:true
+
+	student blank:false, nullable:false
+	
+	returndate blank:true, nullable:true
 
     }
 }

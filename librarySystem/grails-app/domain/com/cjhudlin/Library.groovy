@@ -12,6 +12,12 @@ String location
 
 int studyspaces
 
+static hasMany=[librarians:Librarian, books:Book, students:Student]
+
+String toString() {
+	return building
+}
+
     static constraints = {
 
 	building blank:false, nullable:false, maxSize:25
