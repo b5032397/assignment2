@@ -18,6 +18,10 @@ Student student
 
 Boolean overdue
 
+String toString() {
+	return title
+}
+
 static hasMany=[bookreviews:BookReview]
 
     static constraints = {
