@@ -34,11 +34,11 @@ static hasMany=[bookreviews:BookReview]
 
 	isbn blank:false, nullable:false
 
-	dateborrowed blank:true, nullable:true
+	dateborrowed blank:false, nullable:false
 
 	student blank:false, nullable:false
 	
-	returndate blank:true, nullable:true
+	returndate blank:false, nullable:false
 
     }
 }

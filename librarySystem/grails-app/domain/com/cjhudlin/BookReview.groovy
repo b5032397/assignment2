@@ -10,6 +10,10 @@ Student student
 
 String review
 
+String toString() {
+	return review
+}
+
     static constraints = {
 
 	book blank:false, nullable:false
@@ -18,6 +22,6 @@ String review
 
 	student blank:false, nullable:false
 
-	review blank:false, nullable:false
+	review blank:false, nullable:false, maxSize:5000, widget:'textarea'
     }
 }

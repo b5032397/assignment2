@@ -28,7 +28,7 @@ String toString() {
 
 	username blank:false, nullable:false
 
-	password blank:false, nullable:false
+	password blank:false, nullable:false, password:true
 
 	studentid blank:false, nullable:false
 
