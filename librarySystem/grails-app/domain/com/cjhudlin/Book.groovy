@@ -18,6 +18,8 @@ Student student
 
 Boolean overdue
 
+Library library
+
 String toString() {
 	return title
 }
@@ -39,6 +41,8 @@ static hasMany=[bookreviews:BookReview]
 	student blank:false, nullable:false
 	
 	returndate blank:false, nullable:false
+
+	library blank:false, nullable:false
 
     }
 }
