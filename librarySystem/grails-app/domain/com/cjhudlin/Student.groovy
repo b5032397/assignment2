@@ -6,7 +6,7 @@ String name
 
 String email
 
-String username
+String userName
 
 String password
 
@@ -26,7 +26,7 @@ String toString() {
 
 	email blank:false, nullable:false, email:true
 
-	username blank:false, nullable:false
+	userName blank:false, nullable:false
 
 	password blank:false, nullable:false, password:true
 

@@ -14,6 +14,14 @@ String studymode
 
 String description
 
+double courseFees
+
+double calculatecourseFees(){
+
+4*courseFees
+
+}
+
 static hasMany=[students:Student]
 
 String toString() {
@@ -31,5 +39,8 @@ String toString() {
 	studymode blank:false, nullable:false, maxSize:20
 
 	description blank:false, nullable:false, maxSize:5000, widget:'textarea'
+
+	courseFees blank:false, nullable:false
+
     }
 }
