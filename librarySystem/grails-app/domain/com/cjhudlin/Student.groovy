@@ -10,7 +10,7 @@ String userName
 
 String password
 
-String studentid
+int studentid
 
 Course course
 

@@ -2,7 +2,7 @@
 grails:
     profile: web
     codegen:
-        defaultPackage: librarysystem
+        defaultPackage: test1
     spring:
         transactionManagement:
             proxies: false
@@ -91,23 +91,23 @@ hibernate:
 dataSource:
     pooled: true
     jmxExport: true
-    driverClassName: com.mysql.jdbc.Driver
-    username: root
-    password: password
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
 
 environments:
     development:
         dataSource:
-            dbCreate: update
-            url: jdbc:mysql://localhost:3306/librarySystem
+            dbCreate: create-drop
+            url: jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
     test:
         dataSource:
             dbCreate: update
-            url: jdbc:mysql://localhost:3306/librarySystem
+            url: jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
     production:
         dataSource:
             dbCreate: none
-            url: jdbc:mysql://localhost:3306/librarySystem
+            url: jdbc:h2:./prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
             properties:
                 jmxEnabled: true
                 initialSize: 5

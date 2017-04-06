@@ -8,7 +8,7 @@ String subject
 
 String author
 
-int isbn
+String isbn
 
 Date dateborrowed
 
