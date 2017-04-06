@@ -4,7 +4,7 @@ class BootStrap {
 
     def init = { servletContext ->
 
-	def BScLanguages = new Course(
+	/*def BScLanguages = new Course(
 		title: 'BSc Languages',
 		code: 03354,
 		leader: 'Mrs Foreign',
@@ -114,7 +114,7 @@ class BootStrap {
 		datecreated: new Date('10/19/2031'),
 		student: 1,
 		review: 'can finally beat my own egg'
-	).save()
+	).save()*/
 		
     }
 }
